@@ -38,7 +38,7 @@ function Book() {
                     />
                   </div>
                   <div
-                    className="text-white fw-bold text-center mb-0 mt-3 px-1"
+                    className="text-white fw-bold text-center mb-0 mt-2 px-1"
                     style={{ lineHeight: "16px", fontSize: "12px" }}
                   >
                     I hope that in the future you will not only be one year
@@ -59,7 +59,7 @@ function Book() {
                   </div>
 
                   <div
-                    className="text-white fw-bold text-center mb-0 mt-3 px-1"
+                    className="text-white fw-bold text-center mb-0 mt-2 px-1"
                     style={{ lineHeight: "16px", fontSize: "12px" }}
                   >
                     May in this new age, all your dreams come true one by one.{" "}
