@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+
+.birthday-text {
+  font-family: "Pacifico", cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: linear-gradient(to bottom, #eedfc5, white);
+  background-repeat: no-repeat;
+  position: relative;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.page {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+input[type="checkbox"] {
+  display: none;
+  outline: none !important;
+  border: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  margin: 0;
+}
+#page1 ~ .pages div.page1 {
+  -webkit-transform: rotateY(-34deg);
+  -moz-transform: rotateY(-34deg);
+  transform: rotateY(-34deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#page1:checked ~ .pages div.page1 {
+  -webkit-transform: rotateY(-140deg);
+  -moz-transform: rotateY(-140deg);
+  transform: rotateY(-140deg);
+}
+
+#page2 ~ .pages div.page2 {
+  -webkit-transform: rotateY(-32deg);
+  -moz-transform: rotateY(-32deg);
+  transform: rotateY(-32deg);
+}
+
+#page2:checked ~ .pages div.page2 {
+  -webkit-transform: rotateY(-140deg);
+  -moz-transform: rotateY(-140deg);
+  transform: rotateY(-140deg);
+}
+
+#page3 ~ .pages div.page3 {
+  -webkit-transform: rotateY(-30deg);
+  -moz-transform: rotateY(-30deg);
+  transform: rotateY(-30deg);
+}
+
+#page3:checked ~ .pages div.page3 {
+  -webkit-transform: rotateY(-140deg);
+  -moz-transform: rotateY(-140deg);
+  transform: rotateY(-140deg);
+}
+
+#page4 ~ .pages div.page4 {
+  -webkit-transform: rotateY(-28deg);
+  -moz-transform: rotateY(-28deg);
+  transform: rotateY(-28deg);
+}
+
+#page4:checked ~ .pages div.page4 {
+  -webkit-transform: rotateY(-140deg);
+  -moz-transform: rotateY(-140deg);
+  transform: rotateY(-140deg);
+}
+.book-container {
+  position: relative;
+}
+.book {
+  position: relative;
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(0%);
+  width: 185px;
+  height: 280px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.book .pages,
+.book .pages > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.book .pages {
+  width: 100%;
+  height: 98%;
+  top: 1%;
+  left: 0%;
+  z-index: 10;
+}
+.book .pages > div {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+  background: -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+  background: -ms-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+  background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+  box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1),
+    inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+  border-radius: 10px;
+  -webkit-transition-duration: 1s;
+}
+.book .pages > div:hover {
+  box-shadow: inset 1px 0px 2px rgba(50, 50, 50, 0.1),
+    inset -3px 1px 1px rgba(150, 150, 150, 0.2);
+}
+.book .pages > div label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middel;
+  background-color: #6c9dc6;
+  padding: 12px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border: solid 1px #ffffff27;
+  border-radius: 10px;
+}
+.ball {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 0.1 !important;
+}
+.page1 .fade-target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease 0.3s, visibility 3s linear 0.1s;
+}
+.page2 .fade-target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease 0.3s, visibility 3s linear 0.1s;
+}
+.page3 .fade-target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease 0.3s, visibility 3s linear 0.1s;
+}
+
+/* Saat #page1 dicentang */
+#page1:checked ~ .pages .page1 .fade-target {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease 0.01s, visibility 3s linear 0.1s;
+}
+#page2:checked ~ .pages .page2 .fade-target {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease 0.01s, visibility 3s linear 0.1s;
+}
+#page3:checked ~ .pages .page3 .fade-target {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease 0.01s, visibility 3s linear 0.1s;
+}
+
+.text-content {
+  font-family: "Chewy", cursive;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 10px;
+  margin: 0;
+}
+
+.textTitle {
+  font-size: 52px;
+}
+.textTitle2 {
+  font-size: 40px;
+}
+
+.imgbd {
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  padding: 5px;
 }
