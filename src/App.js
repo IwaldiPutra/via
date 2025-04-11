@@ -27,12 +27,12 @@ function App() {
           className="w-100 rounded d-flex mx-auto"
           style={{ maxWidth: "600px", height: "auto" }}
         />
-        <br />
+
         <GradientText
           colors={["#52b1ff", "#0e76cb", "#52b1ff", "#0e76cb"]}
           animationSpeed={4}
           showBorder={false}
-          className="textTitle"
+          className="textTitle mt-2"
         >
           Happy Birthday{" "}
         </GradientText>

@@ -67,6 +67,19 @@ function Book() {
                 </div>
               </label>
             </div>
+
+            <div className="page4">
+              <label htmlFor="page4">
+                <div className="d-flex fade-target align-items-center h-100 m-0">
+                  <div
+                    className="text-white fw-bold text-center mb-0 mx-auto px-1"
+                    style={{ lineHeight: "16px", fontSize: "12px" }}
+                  >
+                    Wish you all the best{" "}
+                  </div>
+                </div>
+              </label>
+            </div>
           </div>
         </div>
       </div>

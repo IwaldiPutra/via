@@ -5,11 +5,15 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #eedfc5, white);
+  background-color: #eedfc5;
   background-repeat: no-repeat;
   height: 100vh;
   position: relative;
   overflow: hidden;
+  background-image: url("./bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page {
@@ -167,6 +171,11 @@ h1 {
   visibility: visible;
   transition: opacity 1s ease 0.3s, visibility 3s linear 0.1s;
 }
+.page4 .fade-target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease 0.3s, visibility 3s linear 0.1s;
+}
 
 /* Saat #page1 dicentang */
 #page1:checked ~ .pages .page1 .fade-target {
@@ -180,6 +189,11 @@ h1 {
   transition: opacity 0.5s ease 0.01s, visibility 3s linear 0.1s;
 }
 #page3:checked ~ .pages .page3 .fade-target {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease 0.01s, visibility 3s linear 0.1s;
+}
+#page4:checked ~ .pages .page4 .fade-target {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease 0.01s, visibility 3s linear 0.1s;
