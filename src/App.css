@@ -7,11 +7,13 @@
 body {
   background: linear-gradient(to bottom, #eedfc5, white);
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .page {
-  min-height: 90vh;
+  height: 100vh;
 }
 input[type="checkbox"] {
   display: none;
