@@ -45,7 +45,6 @@ function App() {
           27 TH{" "}
         </GradientText>
         <br />
-        <br />
         <Book />
       </div>
     </div>

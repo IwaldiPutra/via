@@ -7,6 +7,7 @@
 body {
   background: linear-gradient(to bottom, #eedfc5, white);
   background-repeat: no-repeat;
+  height: 90vh;
 }
 
 .page {
