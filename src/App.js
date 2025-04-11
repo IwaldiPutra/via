@@ -9,10 +9,10 @@ function App() {
     <div className="page">
       <div className="ball">
         <Ballpit
-          count={50}
+          count={90}
           gravity={0.6}
           friction={1}
-          wallBounce={0.9}
+          wallBounce={1}
           followCursor={false}
           colors={["#6c9dc6", "black", "#6c9dc6"]}
           lightIntensity={10}
