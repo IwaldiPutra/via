@@ -9,7 +9,7 @@ function App() {
     <div className="page">
       <div className="ball">
         <Ballpit
-          count={90}
+          count={75}
           gravity={0.6}
           friction={1}
           wallBounce={1}
